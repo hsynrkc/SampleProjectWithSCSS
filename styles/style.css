@@ -1,0 +1,234 @@
+header {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hero .container .sass-area .text-area p, .hero .container .css-area .text-area p, header .navigation a {
+  color: gray;
+  text-shadow: 2px 2px 2px;
+}
+.hero .container .sass-area .text-area p:hover, .hero .container .css-area .text-area p:hover, header .navigation a:hover {
+  color: #ffcc70;
+  transition: 0.5s;
+}
+
+.hero .container .sass-area, .hero .container .css-area {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .navigation {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+}
+.hero .container {
+  width: 100%;
+  height: 100%;
+}
+.hero .container .css-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.hero .container .css-area .images {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.hero .container .css-area .text-area {
+  flex: 1;
+  text-align: center;
+}
+.hero .container .css-area .text-area h3 {
+  color: #3498db;
+}
+.hero .container .css-area .text-area p {
+  color: gray;
+}
+.hero .container .vs {
+  text-align: center;
+  font-size: 35px;
+  color: #c850c0;
+}
+.hero .container .vs span {
+  color: #3498db;
+}
+.hero .container .sass-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  flex-direction: row-reverse;
+}
+.hero .container .sass-area .images {
+  display: flex;
+  justify-content: center;
+  flex-basis: 48%;
+}
+.hero .container .sass-area .text-area {
+  flex-basis: 48%;
+  text-align: center;
+}
+.hero .container .sass-area .text-area h3 {
+  color: #c850c0;
+}
+.hero .container .sass-area .text-area p {
+  color: gray;
+}
+
+.info {
+  margin-top: 20px;
+}
+.info .container {
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .info .container {
+    flex-direction: column;
+  }
+}
+.info .container .info-sec {
+  text-align: center;
+}
+.info .container .info-sec h1 {
+  color: #364a5e;
+}
+.info .container .info-sec p {
+  color: white;
+  margin: 20px 0;
+}
+.info .container .info-sec .btn {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, rgba(237, 75, 11, 0.733) 0%, #c51111 52%, #0a5085 90%);
+}
+.info .container .info-sec .btn:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.form-sec {
+  width: 100%;
+  height: 500px;
+}
+.form-sec .form-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.form-sec .form-area .images {
+  display: flex;
+  flex-direction: column;
+}
+.form-sec .form-area .images img {
+  width: 150px;
+}
+.form-sec .form-area form {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 10px;
+  width: 50%;
+}
+.form-sec .form-area form input {
+  padding: 5px 0;
+  border-radius: 5px;
+  border: 1px solid gray;
+  text-align: end;
+}
+.form-sec .form-area form .btn {
+  text-align: center;
+  margin-top: 30px;
+}
+.form-sec .form-area form .btn button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, rgba(237, 75, 11, 0.733) 0%, #c51111 52%, #0a5085 90%);
+  padding: 10px 20px;
+  font-size: 30px;
+}
+.form-sec .form-area form .btn button:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #364a53;
+  width: 100%;
+}
+footer .footer-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+footer .footer-area .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 200px;
+  border-bottom: 1px solid;
+}
+footer .footer-area .contact span {
+  color: white;
+}
+footer .footer-area .footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px 0;
+}
+footer .footer-area .footer-info .social-media {
+  line-height: 25px;
+}
+footer .footer-area .footer-info .social-media p {
+  white-space: nowrap;
+}
+footer .footer-area .footer-info .social-media p span {
+  color: white;
+}
+footer .footer-area .footer-info .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-area .footer-info .logo a {
+  color: white;
+  font-size: 20px;
+}
+footer .footer-area .footer-info .image img {
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */
